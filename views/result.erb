@@ -1,0 +1,10 @@
+<!-- <h1> <%= @game_result %> wins!! </h1> -->
+
+<% case @game_result %>
+<% when 0 %>
+  <h1>It's a draw!</h1>
+<% when 1, 2 %>
+  <h1>Player <%= @game_result %> wins!</h1>
+<% when 123 %>
+  <h1>That's not an option, stupid! Try again!</h1>
+<% end %>
